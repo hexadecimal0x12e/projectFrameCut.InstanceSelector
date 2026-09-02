@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TitleTextBlock.Text" xml:space="preserve">
+    <value>محدد إصدار projectFrameCut</value>
+  </data>
+  <data name="InstancesHeaderTextBlock.Text" xml:space="preserve">
+    <value>التطبيقات المتاحة</value>
+  </data>
+  <data name="NoInstancesTextBlock.Text" xml:space="preserve">
+    <value>لم يتم العثور على مثيلات MSIX صالحة لـ projectFrameCut.</value>
+  </data>
+  <data name="DefaultCliInstanceTitle.Text" xml:space="preserve">
+    <value>مثيل CLI الافتراضي</value>
+  </data>
+  <data name="DefaultCliInstanceDescription.Text" xml:space="preserve">
+    <value>عند عدم تحديد مثيل باستخدام --instance أو PJFC_INSTANCE، سيستخدم pjfc المثيل المحفوظ هنا.</value>
+  </data>
+  <data name="DefaultCliInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>حدد مثيل projectFrameCut</value>
+  </data>
+  <data name="SaveDefaultCliInstanceButton.Content" xml:space="preserve">
+    <value>حفظ المثيل الافتراضي</value>
+  </data>
+  <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
+    <value>مسح المثيل الافتراضي</value>
+  </data>
+  <data name="DirectoryClassTitle.Text" xml:space="preserve">
+    <value>امتداد مجلد المشروع</value>
+  </data>
+  <data name="DirectoryClassDescription.Text" xml:space="preserve">
+    <value>بعد التثبيت، يمكن لمجلدات المشروع التي تحتوي على desktop.ini المطابق فتح Selector بالنقر المزدوج، أو الدخول إلى المجلد عبر «استعراض أصول المشروع».</value>
+  </data>
+  <data name="InstallDirectoryClassButton.Content" xml:space="preserve">
+    <value>تثبيت/إصلاح الامتداد</value>
+  </data>
+  <data name="UninstallDirectoryClassButton.Content" xml:space="preserve">
+    <value>إلغاء تثبيت الامتداد</value>
+  </data>
+  <data name="InstanceManagerDescription.Text" xml:space="preserve">
+    <value>سيؤدي إلغاء تثبيت VersionSelector أيضًا إلى إزالة امتداد مجلد المشروع وإعداد المثيل الافتراضي ومدير المثيلات نفسه.</value>
+  </data>
+  <data name="UninstallInstanceManagerButton.Content" xml:space="preserve">
+    <value>إلغاء تثبيت VersionSelector</value>
+  </data>
+  <data name="CloseButton.Content" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
+  <data name="OpenButton.Content" xml:space="preserve">
+    <value>فتح باستخدام المثيل المحدد</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>محدد إصدار projectFrameCut</value>
+  </data>
+  <data name="Ui_ProjectPath" xml:space="preserve">
+    <value>المشروع: {0}</value>
+  </data>
+  <data name="Ui_InstanceDetails" xml:space="preserve">
+    <value>الإصدار {0} · {1}</value>
+  </data>
+  <data name="Ui_Title_SelectInstance" xml:space="preserve">
+    <value>حدد مثيل projectFrameCut</value>
+  </data>
+  <data name="Ui_Title_Selector" xml:space="preserve">
+    <value>محدد إصدار projectFrameCut</value>
+  </data>
+  <data name="Ui_Error_SelectedInstanceUnavailable" xml:space="preserve">
+    <value>المثيل المحدد غير متاح الآن. أعد فتح Selector لتحديث قائمة المثيلات.</value>
+  </data>
+  <data name="Ui_Default_Current" xml:space="preserve">
+    <value>المثيل الافتراضي الحالي: {0} (الإصدار {1})</value>
+  </data>
+  <data name="Ui_Default_NotSet" xml:space="preserve">
+    <value>المثيل الافتراضي الحالي: غير مضبوط</value>
+  </data>
+  <data name="Ui_Default_Unavailable" xml:space="preserve">
+    <value>المثيل الافتراضي المكوّن «{0}» غير متاح حاليًا.</value>
+  </data>
+  <data name="Ui_Error_SaveDefault" xml:space="preserve">
+    <value>تعذر حفظ مثيل CLI الافتراضي: {0}</value>
+  </data>
+  <data name="Ui_Error_ClearDefault" xml:space="preserve">
+    <value>تعذر مسح مثيل CLI الافتراضي: {0}</value>
+  </data>
+  <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
+    <value>تم تثبيت امتداد مجلد المشروع.</value>
+  </data>
+  <data name="Ui_Status_DirectoryUninstalled" xml:space="preserve">
+    <value>تم إلغاء تثبيت امتداد مجلد المشروع.</value>
+  </data>
+  <data name="Ui_Error_InstallDirectory" xml:space="preserve">
+    <value>تعذر تثبيت امتداد مجلد المشروع: {0}</value>
+  </data>
+  <data name="Ui_Error_UninstallDirectory" xml:space="preserve">
+    <value>تعذر إلغاء تثبيت امتداد مجلد المشروع: {0}</value>
+  </data>
+  <data name="Ui_Dialog_UninstallTitle" xml:space="preserve">
+    <value>إلغاء تثبيت VersionSelector؟</value>
+  </data>
+  <data name="Ui_Dialog_UninstallContent" xml:space="preserve">
+    <value>سيؤدي ذلك إلى إلغاء تثبيت جميع امتدادات Selector ومدير المثيلات نفسه، كما سيصبح أمر pjfc غير متاح. هل تريد المتابعة؟</value>
+  </data>
+  <data name="Ui_Dialog_ConfirmUninstall" xml:space="preserve">
+    <value>إلغاء التثبيت</value>
+  </data>
+  <data name="Ui_Dialog_Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="Ui_Status_Uninstalling" xml:space="preserve">
+    <value>تم إلغاء تثبيت امتداد Selector لمجلد المشروع. جارٍ إلغاء تثبيت VersionSelector…</value>
+  </data>
+  <data name="Ui_Error_UninstallManager" xml:space="preserve">
+    <value>تعذر إلغاء تثبيت VersionSelector: {0}</value>
+  </data>
+  <data name="Ui_Error_Launch" xml:space="preserve">
+    <value>تعذر بدء المثيل المحدد: {0}</value>
+  </data>
+  <data name="Ui_Directory_Installed" xml:space="preserve">
+    <value>الحالة الحالية: مثبت</value>
+  </data>
+  <data name="Ui_Directory_NotInstalled" xml:space="preserve">
+    <value>الحالة الحالية: غير مثبت</value>
+  </data>
+  <data name="App_SettingsMessage" xml:space="preserve">
+    <value>يمكنك إدارة امتداد مجلد المشروع ومثيل CLI الافتراضي لـ pjfc هنا.</value>
+  </data>
+  <data name="App_Error_DiscoverInstances" xml:space="preserve">
+    <value>تعذر الاستعلام عن مثيلات projectFrameCut المثبتة: {0}</value>
+  </data>
+  <data name="App_Error_LastLaunch" xml:space="preserve">
+    <value>تعذر بدء المثيل الذي استخدمه المشروع آخر مرة «{0}»: {1}
+حدد مثيلًا مثبتًا آخر.</value>
+  </data>
+  <data name="App_Error_InstanceNotFound" xml:space="preserve">
+    <value>تعذر العثور على المثيل الذي استخدمه المشروع آخر مرة ({0}). حدد مثيلًا مثبتًا.</value>
+  </data>
+  <data name="App_Error_MissingLastOpen" xml:space="preserve">
+    <value>لا يحتوي المشروع على LastOpenAppIdentifier. حدد مثيلًا لفتح هذا المشروع.</value>
+  </data>
+  <data name="App_Error_Startup" xml:space="preserve">
+    <value>حدث خطأ أثناء معالجة طلب تشغيل المشروع: {0}</value>
+  </data>
+  <data name="App_Error_ActivationNoPath" xml:space="preserve">
+    <value>لم يتم العثور على مسار مشروع صالح في طلب تنشيط الملف.</value>
+  </data>
+  <data name="App_Error_ActivationMultiple" xml:space="preserve">
+    <value>يمكن فتح مشروع projectFrameCut واحد فقط في كل مرة.</value>
+  </data>
+  <data name="App_Error_ActivationRead" xml:space="preserve">
+    <value>تعذر قراءة وسيطات تنشيط الملف: {0}</value>
+  </data>
+  <data name="InstanceManagerTitle.Text" xml:space="preserve">
+    <value>إلغاء تثبيت VersionSelector</value>
+  </data>
+</root>

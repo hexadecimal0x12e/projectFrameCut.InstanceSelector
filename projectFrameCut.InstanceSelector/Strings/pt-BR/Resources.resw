@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TitleTextBlock.Text" xml:space="preserve">
+    <value>Seletor de versões do projectFrameCut</value>
+  </data>
+  <data name="InstancesHeaderTextBlock.Text" xml:space="preserve">
+    <value>Aplicativos disponíveis</value>
+  </data>
+  <data name="NoInstancesTextBlock.Text" xml:space="preserve">
+    <value>Nenhuma instância MSIX utilizável do projectFrameCut foi encontrada.</value>
+  </data>
+  <data name="DefaultCliInstanceTitle.Text" xml:space="preserve">
+    <value>Instância CLI padrão</value>
+  </data>
+  <data name="DefaultCliInstanceDescription.Text" xml:space="preserve">
+    <value>Quando nenhuma instância é especificada com --instance ou PJFC_INSTANCE, o pjfc usa a instância salva aqui.</value>
+  </data>
+  <data name="DefaultCliInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Selecionar uma instância do projectFrameCut</value>
+  </data>
+  <data name="SaveDefaultCliInstanceButton.Content" xml:space="preserve">
+    <value>Salvar instância padrão</value>
+  </data>
+  <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
+    <value>Limpar instância padrão</value>
+  </data>
+  <data name="DirectoryClassTitle.Text" xml:space="preserve">
+    <value>Extensão da pasta do projeto</value>
+  </data>
+  <data name="DirectoryClassDescription.Text" xml:space="preserve">
+    <value>Após a instalação, as pastas de projeto com o desktop.ini correspondente podem abrir o Selector com um clique duplo ou entrar na pasta por “Procurar recursos do projeto”.</value>
+  </data>
+  <data name="InstallDirectoryClassButton.Content" xml:space="preserve">
+    <value>Instalar/reparar extensão</value>
+  </data>
+  <data name="UninstallDirectoryClassButton.Content" xml:space="preserve">
+    <value>Desinstalar extensão</value>
+  </data>
+  <data name="InstanceManagerDescription.Text" xml:space="preserve">
+    <value>A desinstalação do VersionSelector também remove a extensão da pasta do projeto, a configuração da instância padrão e o próprio gerenciador de instâncias.</value>
+  </data>
+  <data name="UninstallInstanceManagerButton.Content" xml:space="preserve">
+    <value>Desinstalar o VersionSelector</value>
+  </data>
+  <data name="CloseButton.Content" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="OpenButton.Content" xml:space="preserve">
+    <value>Abrir com a instância selecionada</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>Seletor de versões do projectFrameCut</value>
+  </data>
+  <data name="Ui_ProjectPath" xml:space="preserve">
+    <value>Projeto: {0}</value>
+  </data>
+  <data name="Ui_InstanceDetails" xml:space="preserve">
+    <value>Versão {0} · {1}</value>
+  </data>
+  <data name="Ui_Title_SelectInstance" xml:space="preserve">
+    <value>Selecionar uma instância do projectFrameCut</value>
+  </data>
+  <data name="Ui_Title_Selector" xml:space="preserve">
+    <value>Seletor de versões do projectFrameCut</value>
+  </data>
+  <data name="Ui_Error_SelectedInstanceUnavailable" xml:space="preserve">
+    <value>A instância selecionada não está mais disponível. Reabra o Selector para atualizar a lista de instâncias.</value>
+  </data>
+  <data name="Ui_Default_Current" xml:space="preserve">
+    <value>Instância padrão atual: {0} (versão {1})</value>
+  </data>
+  <data name="Ui_Default_NotSet" xml:space="preserve">
+    <value>Instância padrão atual: não definida</value>
+  </data>
+  <data name="Ui_Default_Unavailable" xml:space="preserve">
+    <value>A instância padrão configurada “{0}” está indisponível no momento.</value>
+  </data>
+  <data name="Ui_Error_SaveDefault" xml:space="preserve">
+    <value>Não foi possível salvar a instância CLI padrão: {0}</value>
+  </data>
+  <data name="Ui_Error_ClearDefault" xml:space="preserve">
+    <value>Não foi possível limpar a instância CLI padrão: {0}</value>
+  </data>
+  <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
+    <value>A extensão da pasta do projeto foi instalada.</value>
+  </data>
+  <data name="Ui_Status_DirectoryUninstalled" xml:space="preserve">
+    <value>A extensão da pasta do projeto foi desinstalada.</value>
+  </data>
+  <data name="Ui_Error_InstallDirectory" xml:space="preserve">
+    <value>Não foi possível instalar a extensão da pasta do projeto: {0}</value>
+  </data>
+  <data name="Ui_Error_UninstallDirectory" xml:space="preserve">
+    <value>Não foi possível desinstalar a extensão da pasta do projeto: {0}</value>
+  </data>
+  <data name="Ui_Dialog_UninstallTitle" xml:space="preserve">
+    <value>Desinstalar o VersionSelector?</value>
+  </data>
+  <data name="Ui_Dialog_UninstallContent" xml:space="preserve">
+    <value>Isso desinstalará todas as extensões do Selector e o próprio gerenciador de instâncias. O comando pjfc também ficará indisponível. Continuar?</value>
+  </data>
+  <data name="Ui_Dialog_ConfirmUninstall" xml:space="preserve">
+    <value>Desinstalar</value>
+  </data>
+  <data name="Ui_Dialog_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Ui_Status_Uninstalling" xml:space="preserve">
+    <value>A extensão Selector da pasta do projeto foi desinstalada. Desinstalando o VersionSelector…</value>
+  </data>
+  <data name="Ui_Error_UninstallManager" xml:space="preserve">
+    <value>Não foi possível desinstalar o VersionSelector: {0}</value>
+  </data>
+  <data name="Ui_Error_Launch" xml:space="preserve">
+    <value>Não foi possível iniciar a instância selecionada: {0}</value>
+  </data>
+  <data name="Ui_Directory_Installed" xml:space="preserve">
+    <value>Status atual: instalada</value>
+  </data>
+  <data name="Ui_Directory_NotInstalled" xml:space="preserve">
+    <value>Status atual: não instalada</value>
+  </data>
+  <data name="App_SettingsMessage" xml:space="preserve">
+    <value>Você pode gerenciar aqui a extensão da pasta do projeto e a instância CLI padrão do pjfc.</value>
+  </data>
+  <data name="App_Error_DiscoverInstances" xml:space="preserve">
+    <value>Não foi possível consultar as instâncias instaladas do projectFrameCut: {0}</value>
+  </data>
+  <data name="App_Error_LastLaunch" xml:space="preserve">
+    <value>Não foi possível iniciar a instância usada pelo projeto pela última vez, “{0}”: {1}
+Selecione outra instância instalada.</value>
+  </data>
+  <data name="App_Error_InstanceNotFound" xml:space="preserve">
+    <value>A instância usada pelo projeto pela última vez ({0}) não foi encontrada. Selecione uma instância instalada.</value>
+  </data>
+  <data name="App_Error_MissingLastOpen" xml:space="preserve">
+    <value>O projeto não possui um LastOpenAppIdentifier registrado. Selecione uma instância para abrir este projeto.</value>
+  </data>
+  <data name="App_Error_Startup" xml:space="preserve">
+    <value>Ocorreu um erro ao processar a solicitação de inicialização do projeto: {0}</value>
+  </data>
+  <data name="App_Error_ActivationNoPath" xml:space="preserve">
+    <value>Nenhum caminho de projeto utilizável foi encontrado na solicitação de ativação do arquivo.</value>
+  </data>
+  <data name="App_Error_ActivationMultiple" xml:space="preserve">
+    <value>Somente um projeto projectFrameCut pode ser aberto por vez.</value>
+  </data>
+  <data name="App_Error_ActivationRead" xml:space="preserve">
+    <value>Não foi possível ler os argumentos de ativação do arquivo: {0}</value>
+  </data>
+  <data name="InstanceManagerTitle.Text" xml:space="preserve">
+    <value>Desinstalar o VersionSelector</value>
+  </data>
+</root>

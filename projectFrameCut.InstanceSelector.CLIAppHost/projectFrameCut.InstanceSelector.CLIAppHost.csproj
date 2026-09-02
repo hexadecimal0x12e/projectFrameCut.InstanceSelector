@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+		<AssemblyName>projectFrameCut.InstanceSelector</AssemblyName>
+		<PackageId>projectFrameCut.InstanceSelector.CLIAppHost</PackageId>
+		<ApplicationIcon>..\appicon.ico</ApplicationIcon>
+
+		<Description>projectFrameCut-Compatible Instance Selector</Description>
+		<AssemblyDescription>projectFrameCut-Compatible Instance Selector</AssemblyDescription>
+		<AssemblyTitle>projectFrameCut-Compatible Instance Selector</AssemblyTitle>
+		<Title>projectFrameCut-Compatible Instance Selector</Title>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\appicon.ico" />
+  </ItemGroup>
+
+	<Target Name="CopyAppHost" AfterTargets="Build">
+		<Copy SourceFiles="$(OutputPath)\$(AssemblyName).exe" DestinationFiles="..\projectFrameCut.VersionSelector\pjfc.exe" OverwriteReadOnlyFiles="true"  />
+	</Target>
+
+</Project>

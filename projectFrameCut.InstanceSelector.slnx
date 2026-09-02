@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="projectFrameCut.InstanceSelector.CLIAppHost/projectFrameCut.InstanceSelector.CLIAppHost.csproj" Id="e10e98da-c885-41e7-bca6-e16462e633dd" />
+  <Project Path="projectFrameCut.InstanceSelector/projectFrameCut.InstanceSelector.csproj">
+    <Platform Solution="*|ARM64" Project="ARM64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Deploy />
+  </Project>
+</Solution>

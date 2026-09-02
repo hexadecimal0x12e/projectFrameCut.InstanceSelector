@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
+  xmlns:desktop6="http://schemas.microsoft.com/appx/manifest/desktop/windows10/6"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:systemai="http://schemas.microsoft.com/appx/manifest/systemai/windows10"
+  IgnorableNamespaces="uap rescap systemai desktop6">
+
+	<Identity
+    Name="projectFrameCut.InstanceSelector"
+    Publisher="CN=0AD263CD-E10E-4A8B-A187-25C0A41C69D7"
+    Version="1.0.0.0" />
+
+	<mp:PhoneIdentity PhoneProductId="e69a88dc-4123-4d8e-b798-3ccfe4485ff9" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+	<Properties>
+		<DisplayName>projectFrameCut-Compatible Instance Selector and CLI Multiplexer</DisplayName>
+		<PublisherDisplayName>hexadecimal0x12e</PublisherDisplayName>
+		<Logo>Assets\StoreLogo.png</Logo>
+		<desktop6:RegistryWriteVirtualization>disabled</desktop6:RegistryWriteVirtualization>
+	</Properties>
+
+	<Dependencies>
+		<TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26226.0" />
+		<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26226.0" />
+	</Dependencies>
+
+	<Resources>
+		<Resource Language="x-generate"/>
+	</Resources>
+
+	<Applications>
+		<Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="$targetentrypoint$">
+			<uap:VisualElements
+        AppListEntry="none"
+        DisplayName="projectFrameCut-Compatible Instance Selector"
+        Description="select the Instance of projectFrameCut to use"
+        BackgroundColor="transparent"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png">
+				<uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"  Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
+				<uap:SplashScreen Image="Assets\SplashScreen.png" />
+			</uap:VisualElements>
+			<Extensions>
+				<uap:Extension Category="windows.fileTypeAssociation">
+					<uap:FileTypeAssociation Name="projectframecut_project">
+						<uap:DisplayName>projectFrameCut Project</uap:DisplayName>
+						<uap:SupportedFileTypes>
+							<uap:FileType>.pjfc</uap:FileType>
+						</uap:SupportedFileTypes>
+					</uap:FileTypeAssociation>
+				</uap:Extension>
+				<uap:Extension Category="windows.fileTypeAssociation">
+					<uap:FileTypeAssociation Name="projectframecut_plugin">
+						<uap:DisplayName>projectFrameCut Plugin</uap:DisplayName>
+						<uap:SupportedFileTypes>
+							<uap:FileType>.pjfcPlugin</uap:FileType>
+						</uap:SupportedFileTypes>
+					</uap:FileTypeAssociation>
+				</uap:Extension>
+				<uap3:Extension Category="windows.appExecutionAlias" Executable="projectFrameCut.InstanceSelector.exe" EntryPoint="Windows.FullTrustApplication">
+					<uap3:AppExecutionAlias>
+						<desktop:ExecutionAlias Alias="projectFrameCut.InstanceSelector.exe" />
+					</uap3:AppExecutionAlias>
+				</uap3:Extension>
+				<uap:Extension Category="windows.protocol">
+					<uap:Protocol Name="pjfc">
+						<uap:DisplayName>projectFrameCut URL</uap:DisplayName>
+					</uap:Protocol>
+				</uap:Extension>
+			</Extensions>
+		</Application>
+		
+		<Application Id="CLI" Executable="pjfc.exe" EntryPoint="Windows.FullTrustApplication">
+			<uap:VisualElements DisplayName="projectFrameCut-Compatible CLI Multiplexer" Description="the multiplexer for the projectFrameCut CLI" AppListEntry="none"
+													Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" BackgroundColor="transparent" >
+				<uap:DefaultTile/>
+			</uap:VisualElements >
+			<Extensions>
+				<uap3:Extension Category="windows.appExecutionAlias" Executable="pjfc.exe" EntryPoint="Windows.FullTrustApplication">
+					<uap3:AppExecutionAlias>
+						<desktop:ExecutionAlias Alias="pjfc.exe" />
+					</uap3:AppExecutionAlias>
+				</uap3:Extension>
+			</Extensions>
+		</Application>
+	</Applications>
+
+	<Capabilities>
+		<rescap:Capability Name="runFullTrust" />
+		<rescap:Capability Name="packageQuery" />
+		<rescap:Capability Name="unvirtualizedResources" />
+		<Capability Name="internetClientServer"/>
+		<Capability Name="internetClient"/>
+	</Capabilities>
+</Package>

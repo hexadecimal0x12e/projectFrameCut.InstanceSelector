@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TitleTextBlock.Text" xml:space="preserve">
+    <value>projectFrameCut 版本選擇器</value>
+  </data>
+  <data name="InstancesHeaderTextBlock.Text" xml:space="preserve">
+    <value>可用的應用程式</value>
+  </data>
+  <data name="NoInstancesTextBlock.Text" xml:space="preserve">
+    <value>找不到可用的 projectFrameCut MSIX 執行個體。</value>
+  </data>
+  <data name="DefaultCliInstanceTitle.Text" xml:space="preserve">
+    <value>預設 CLI 執行個體</value>
+  </data>
+  <data name="DefaultCliInstanceDescription.Text" xml:space="preserve">
+    <value>未透過 --instance 或 PJFC_INSTANCE 指定執行個體時，pjfc 會使用儲存在此處的執行個體。</value>
+  </data>
+  <data name="DefaultCliInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>選擇 projectFrameCut 執行個體</value>
+  </data>
+  <data name="SaveDefaultCliInstanceButton.Content" xml:space="preserve">
+    <value>儲存預設執行個體</value>
+  </data>
+  <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
+    <value>清除預設執行個體</value>
+  </data>
+  <data name="DirectoryClassTitle.Text" xml:space="preserve">
+    <value>專案資料夾擴充功能</value>
+  </data>
+  <data name="DirectoryClassDescription.Text" xml:space="preserve">
+    <value>安裝後，含有對應 desktop.ini 的專案資料夾可在雙擊時開啟 Selector，也可透過「瀏覽專案資產」進入資料夾。</value>
+  </data>
+  <data name="InstallDirectoryClassButton.Content" xml:space="preserve">
+    <value>安裝/修復擴充功能</value>
+  </data>
+  <data name="UninstallDirectoryClassButton.Content" xml:space="preserve">
+    <value>解除安裝擴充功能</value>
+  </data>
+  <data name="InstanceManagerDescription.Text" xml:space="preserve">
+    <value>解除安裝 VersionSelector 也會移除專案資料夾擴充功能、預設執行個體設定及執行個體管理器本身。</value>
+  </data>
+  <data name="UninstallInstanceManagerButton.Content" xml:space="preserve">
+    <value>解除安裝 VersionSelector</value>
+  </data>
+  <data name="CloseButton.Content" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="OpenButton.Content" xml:space="preserve">
+    <value>使用選取的執行個體開啟</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>projectFrameCut 版本選擇器</value>
+  </data>
+  <data name="Ui_ProjectPath" xml:space="preserve">
+    <value>專案：{0}</value>
+  </data>
+  <data name="Ui_InstanceDetails" xml:space="preserve">
+    <value>版本 {0} · {1}</value>
+  </data>
+  <data name="Ui_Title_SelectInstance" xml:space="preserve">
+    <value>選擇 projectFrameCut 執行個體</value>
+  </data>
+  <data name="Ui_Title_Selector" xml:space="preserve">
+    <value>projectFrameCut 版本選擇器</value>
+  </data>
+  <data name="Ui_Error_SelectedInstanceUnavailable" xml:space="preserve">
+    <value>選取的執行個體已無法使用，請重新開啟 Selector 以重新整理執行個體清單。</value>
+  </data>
+  <data name="Ui_Default_Current" xml:space="preserve">
+    <value>目前預設執行個體：{0}（版本 {1}）</value>
+  </data>
+  <data name="Ui_Default_NotSet" xml:space="preserve">
+    <value>目前預設執行個體：未設定</value>
+  </data>
+  <data name="Ui_Default_Unavailable" xml:space="preserve">
+    <value>已設定的預設執行個體「{0}」目前無法使用。</value>
+  </data>
+  <data name="Ui_Error_SaveDefault" xml:space="preserve">
+    <value>無法儲存預設 CLI 執行個體：{0}</value>
+  </data>
+  <data name="Ui_Error_ClearDefault" xml:space="preserve">
+    <value>無法清除預設 CLI 執行個體：{0}</value>
+  </data>
+  <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
+    <value>專案資料夾擴充功能已安裝。</value>
+  </data>
+  <data name="Ui_Status_DirectoryUninstalled" xml:space="preserve">
+    <value>專案資料夾擴充功能已解除安裝。</value>
+  </data>
+  <data name="Ui_Error_InstallDirectory" xml:space="preserve">
+    <value>無法安裝專案資料夾擴充功能：{0}</value>
+  </data>
+  <data name="Ui_Error_UninstallDirectory" xml:space="preserve">
+    <value>無法解除安裝專案資料夾擴充功能：{0}</value>
+  </data>
+  <data name="Ui_Dialog_UninstallTitle" xml:space="preserve">
+    <value>解除安裝 VersionSelector？</value>
+  </data>
+  <data name="Ui_Dialog_UninstallContent" xml:space="preserve">
+    <value>此操作將解除安裝所有 Selector 擴充功能及執行個體管理器本身，pjfc 命令也將無法使用。要繼續嗎？</value>
+  </data>
+  <data name="Ui_Dialog_ConfirmUninstall" xml:space="preserve">
+    <value>解除安裝</value>
+  </data>
+  <data name="Ui_Dialog_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Ui_Status_Uninstalling" xml:space="preserve">
+    <value>專案資料夾 Selector 擴充功能已解除安裝。正在解除安裝 VersionSelector……</value>
+  </data>
+  <data name="Ui_Error_UninstallManager" xml:space="preserve">
+    <value>無法解除安裝 VersionSelector：{0}</value>
+  </data>
+  <data name="Ui_Error_Launch" xml:space="preserve">
+    <value>無法啟動選取的執行個體：{0}</value>
+  </data>
+  <data name="Ui_Directory_Installed" xml:space="preserve">
+    <value>目前狀態：已安裝</value>
+  </data>
+  <data name="Ui_Directory_NotInstalled" xml:space="preserve">
+    <value>目前狀態：未安裝</value>
+  </data>
+  <data name="App_SettingsMessage" xml:space="preserve">
+    <value>您可以在此管理專案資料夾擴充功能和 pjfc 的預設 CLI 執行個體。</value>
+  </data>
+  <data name="App_Error_DiscoverInstances" xml:space="preserve">
+    <value>無法查詢已安裝的 projectFrameCut 執行個體：{0}</value>
+  </data>
+  <data name="App_Error_LastLaunch" xml:space="preserve">
+    <value>無法啟動專案上次使用的執行個體「{0}」：{1}
+請選擇其他已安裝的執行個體。</value>
+  </data>
+  <data name="App_Error_InstanceNotFound" xml:space="preserve">
+    <value>找不到專案上次使用的執行個體（{0}）。請選擇已安裝的執行個體。</value>
+  </data>
+  <data name="App_Error_MissingLastOpen" xml:space="preserve">
+    <value>專案沒有記錄 LastOpenAppIdentifier。請選擇要開啟此專案的執行個體。</value>
+  </data>
+  <data name="App_Error_Startup" xml:space="preserve">
+    <value>處理專案啟動要求時發生錯誤：{0}</value>
+  </data>
+  <data name="App_Error_ActivationNoPath" xml:space="preserve">
+    <value>檔案啟用要求中沒有可用的專案路徑。</value>
+  </data>
+  <data name="App_Error_ActivationMultiple" xml:space="preserve">
+    <value>一次只能開啟一個 projectFrameCut 專案。</value>
+  </data>
+  <data name="App_Error_ActivationRead" xml:space="preserve">
+    <value>無法讀取檔案啟用引數：{0}</value>
+  </data>
+  <data name="InstanceManagerTitle.Text" xml:space="preserve">
+    <value>解除安裝 VersionSelector</value>
+  </data>
+</root>

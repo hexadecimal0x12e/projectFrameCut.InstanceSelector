@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TitleTextBlock.Text" xml:space="preserve">
+    <value>Selektor wersji projectFrameCut</value>
+  </data>
+  <data name="InstancesHeaderTextBlock.Text" xml:space="preserve">
+    <value>Dostępne aplikacje</value>
+  </data>
+  <data name="NoInstancesTextBlock.Text" xml:space="preserve">
+    <value>Nie znaleziono użytecznych wystąpień MSIX projectFrameCut.</value>
+  </data>
+  <data name="DefaultCliInstanceTitle.Text" xml:space="preserve">
+    <value>Domyślne wystąpienie CLI</value>
+  </data>
+  <data name="DefaultCliInstanceDescription.Text" xml:space="preserve">
+    <value>Jeśli nie określono wystąpienia za pomocą --instance lub PJFC_INSTANCE, pjfc użyje wystąpienia zapisanego tutaj.</value>
+  </data>
+  <data name="DefaultCliInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Wybierz wystąpienie projectFrameCut</value>
+  </data>
+  <data name="SaveDefaultCliInstanceButton.Content" xml:space="preserve">
+    <value>Zapisz domyślne wystąpienie</value>
+  </data>
+  <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
+    <value>Wyczyść domyślne wystąpienie</value>
+  </data>
+  <data name="DirectoryClassTitle.Text" xml:space="preserve">
+    <value>Rozszerzenie folderu projektu</value>
+  </data>
+  <data name="DirectoryClassDescription.Text" xml:space="preserve">
+    <value>Po instalacji foldery projektu z odpowiednim plikiem desktop.ini mogą otwierać Selector dwukrotnym kliknięciem lub wejść do folderu przez „Przeglądaj zasoby projektu”.</value>
+  </data>
+  <data name="InstallDirectoryClassButton.Content" xml:space="preserve">
+    <value>Zainstaluj/napraw rozszerzenie</value>
+  </data>
+  <data name="UninstallDirectoryClassButton.Content" xml:space="preserve">
+    <value>Odinstaluj rozszerzenie</value>
+  </data>
+  <data name="InstanceManagerDescription.Text" xml:space="preserve">
+    <value>Odinstalowanie VersionSelector usunie również rozszerzenie folderu projektu, ustawienie domyślnego wystąpienia oraz samego menedżera wystąpień.</value>
+  </data>
+  <data name="UninstallInstanceManagerButton.Content" xml:space="preserve">
+    <value>Odinstaluj VersionSelector</value>
+  </data>
+  <data name="CloseButton.Content" xml:space="preserve">
+    <value>Zamknij</value>
+  </data>
+  <data name="OpenButton.Content" xml:space="preserve">
+    <value>Otwórz za pomocą wybranego wystąpienia</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>Selektor wersji projectFrameCut</value>
+  </data>
+  <data name="Ui_ProjectPath" xml:space="preserve">
+    <value>Projekt: {0}</value>
+  </data>
+  <data name="Ui_InstanceDetails" xml:space="preserve">
+    <value>Wersja {0} · {1}</value>
+  </data>
+  <data name="Ui_Title_SelectInstance" xml:space="preserve">
+    <value>Wybierz wystąpienie projectFrameCut</value>
+  </data>
+  <data name="Ui_Title_Selector" xml:space="preserve">
+    <value>Selektor wersji projectFrameCut</value>
+  </data>
+  <data name="Ui_Error_SelectedInstanceUnavailable" xml:space="preserve">
+    <value>Wybrane wystąpienie nie jest już dostępne. Otwórz ponownie Selector, aby odświeżyć listę wystąpień.</value>
+  </data>
+  <data name="Ui_Default_Current" xml:space="preserve">
+    <value>Bieżące domyślne wystąpienie: {0} (wersja {1})</value>
+  </data>
+  <data name="Ui_Default_NotSet" xml:space="preserve">
+    <value>Bieżące domyślne wystąpienie: nie ustawiono</value>
+  </data>
+  <data name="Ui_Default_Unavailable" xml:space="preserve">
+    <value>Skonfigurowane domyślne wystąpienie „{0}” jest obecnie niedostępne.</value>
+  </data>
+  <data name="Ui_Error_SaveDefault" xml:space="preserve">
+    <value>Nie można zapisać domyślnego wystąpienia CLI: {0}</value>
+  </data>
+  <data name="Ui_Error_ClearDefault" xml:space="preserve">
+    <value>Nie można wyczyścić domyślnego wystąpienia CLI: {0}</value>
+  </data>
+  <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
+    <value>Zainstalowano rozszerzenie folderu projektu.</value>
+  </data>
+  <data name="Ui_Status_DirectoryUninstalled" xml:space="preserve">
+    <value>Odinstalowano rozszerzenie folderu projektu.</value>
+  </data>
+  <data name="Ui_Error_InstallDirectory" xml:space="preserve">
+    <value>Nie można zainstalować rozszerzenia folderu projektu: {0}</value>
+  </data>
+  <data name="Ui_Error_UninstallDirectory" xml:space="preserve">
+    <value>Nie można odinstalować rozszerzenia folderu projektu: {0}</value>
+  </data>
+  <data name="Ui_Dialog_UninstallTitle" xml:space="preserve">
+    <value>Odinstalować VersionSelector?</value>
+  </data>
+  <data name="Ui_Dialog_UninstallContent" xml:space="preserve">
+    <value>Ta operacja odinstaluje wszystkie rozszerzenia Selector oraz samego menedżera wystąpień. Polecenie pjfc również stanie się niedostępne. Kontynuować?</value>
+  </data>
+  <data name="Ui_Dialog_ConfirmUninstall" xml:space="preserve">
+    <value>Odinstaluj</value>
+  </data>
+  <data name="Ui_Dialog_Cancel" xml:space="preserve">
+    <value>Anuluj</value>
+  </data>
+  <data name="Ui_Status_Uninstalling" xml:space="preserve">
+    <value>Odinstalowano rozszerzenie Selector folderu projektu. Odinstalowywanie VersionSelector…</value>
+  </data>
+  <data name="Ui_Error_UninstallManager" xml:space="preserve">
+    <value>Nie można odinstalować VersionSelector: {0}</value>
+  </data>
+  <data name="Ui_Error_Launch" xml:space="preserve">
+    <value>Nie można uruchomić wybranego wystąpienia: {0}</value>
+  </data>
+  <data name="Ui_Directory_Installed" xml:space="preserve">
+    <value>Bieżący stan: zainstalowane</value>
+  </data>
+  <data name="Ui_Directory_NotInstalled" xml:space="preserve">
+    <value>Bieżący stan: niezainstalowane</value>
+  </data>
+  <data name="App_SettingsMessage" xml:space="preserve">
+    <value>Możesz tutaj zarządzać rozszerzeniem folderu projektu i domyślnym wystąpieniem CLI pjfc.</value>
+  </data>
+  <data name="App_Error_DiscoverInstances" xml:space="preserve">
+    <value>Nie można odpytać zainstalowanych wystąpień projectFrameCut: {0}</value>
+  </data>
+  <data name="App_Error_LastLaunch" xml:space="preserve">
+    <value>Nie można uruchomić ostatnio używanego przez projekt wystąpienia „{0}”: {1}
+Wybierz inne zainstalowane wystąpienie.</value>
+  </data>
+  <data name="App_Error_InstanceNotFound" xml:space="preserve">
+    <value>Nie znaleziono ostatnio używanego przez projekt wystąpienia ({0}). Wybierz zainstalowane wystąpienie.</value>
+  </data>
+  <data name="App_Error_MissingLastOpen" xml:space="preserve">
+    <value>Projekt nie zawiera identyfikatora LastOpenAppIdentifier. Wybierz wystąpienie, aby otworzyć ten projekt.</value>
+  </data>
+  <data name="App_Error_Startup" xml:space="preserve">
+    <value>Wystąpił błąd podczas przetwarzania żądania uruchomienia projektu: {0}</value>
+  </data>
+  <data name="App_Error_ActivationNoPath" xml:space="preserve">
+    <value>W żądaniu aktywacji pliku nie znaleziono użytecznej ścieżki projektu.</value>
+  </data>
+  <data name="App_Error_ActivationMultiple" xml:space="preserve">
+    <value>Jednocześnie można otworzyć tylko jeden projekt projectFrameCut.</value>
+  </data>
+  <data name="App_Error_ActivationRead" xml:space="preserve">
+    <value>Nie można odczytać argumentów aktywacji pliku: {0}</value>
+  </data>
+  <data name="InstanceManagerTitle.Text" xml:space="preserve">
+    <value>Odinstaluj VersionSelector</value>
+  </data>
+</root>

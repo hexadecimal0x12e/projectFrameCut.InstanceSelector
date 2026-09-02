@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TitleTextBlock.Text" xml:space="preserve">
+    <value>projectFrameCut sürüm seçici</value>
+  </data>
+  <data name="InstancesHeaderTextBlock.Text" xml:space="preserve">
+    <value>Kullanılabilir uygulamalar</value>
+  </data>
+  <data name="NoInstancesTextBlock.Text" xml:space="preserve">
+    <value>Kullanılabilir projectFrameCut MSIX örneği bulunamadı.</value>
+  </data>
+  <data name="DefaultCliInstanceTitle.Text" xml:space="preserve">
+    <value>Varsayılan CLI örneği</value>
+  </data>
+  <data name="DefaultCliInstanceDescription.Text" xml:space="preserve">
+    <value>--instance veya PJFC_INSTANCE ile bir örnek belirtilmediğinde pjfc burada kaydedilen örneği kullanır.</value>
+  </data>
+  <data name="DefaultCliInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Bir projectFrameCut örneği seçin</value>
+  </data>
+  <data name="SaveDefaultCliInstanceButton.Content" xml:space="preserve">
+    <value>Varsayılan örneği kaydet</value>
+  </data>
+  <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
+    <value>Varsayılan örneği temizle</value>
+  </data>
+  <data name="DirectoryClassTitle.Text" xml:space="preserve">
+    <value>Proje klasörü uzantısı</value>
+  </data>
+  <data name="DirectoryClassDescription.Text" xml:space="preserve">
+    <value>Yüklemeden sonra, eşleşen desktop.ini dosyasına sahip proje klasörleri çift tıklamayla Selector-ı açabilir veya “Proje varlıklarına göz at” yoluyla klasöre girebilir.</value>
+  </data>
+  <data name="InstallDirectoryClassButton.Content" xml:space="preserve">
+    <value>Uzantıyı yükle/onar</value>
+  </data>
+  <data name="UninstallDirectoryClassButton.Content" xml:space="preserve">
+    <value>Uzantıyı kaldır</value>
+  </data>
+  <data name="InstanceManagerDescription.Text" xml:space="preserve">
+    <value>VersionSelector kaldırıldığında proje klasörü uzantısı, varsayılan örnek ayarı ve örnek yöneticisinin kendisi de kaldırılır.</value>
+  </data>
+  <data name="UninstallInstanceManagerButton.Content" xml:space="preserve">
+    <value>VersionSelector-ı kaldır</value>
+  </data>
+  <data name="CloseButton.Content" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="OpenButton.Content" xml:space="preserve">
+    <value>Seçili örnekle aç</value>
+  </data>
+  <data name="WindowTitle" xml:space="preserve">
+    <value>projectFrameCut sürüm seçici</value>
+  </data>
+  <data name="Ui_ProjectPath" xml:space="preserve">
+    <value>Proje: {0}</value>
+  </data>
+  <data name="Ui_InstanceDetails" xml:space="preserve">
+    <value>Sürüm {0} · {1}</value>
+  </data>
+  <data name="Ui_Title_SelectInstance" xml:space="preserve">
+    <value>Bir projectFrameCut örneği seçin</value>
+  </data>
+  <data name="Ui_Title_Selector" xml:space="preserve">
+    <value>projectFrameCut sürüm seçici</value>
+  </data>
+  <data name="Ui_Error_SelectedInstanceUnavailable" xml:space="preserve">
+    <value>Seçili örnek artık kullanılamıyor. Örnek listesini yenilemek için Selector-ı yeniden açın.</value>
+  </data>
+  <data name="Ui_Default_Current" xml:space="preserve">
+    <value>Geçerli varsayılan örnek: {0} (sürüm {1})</value>
+  </data>
+  <data name="Ui_Default_NotSet" xml:space="preserve">
+    <value>Geçerli varsayılan örnek: ayarlanmadı</value>
+  </data>
+  <data name="Ui_Default_Unavailable" xml:space="preserve">
+    <value>Yapılandırılan varsayılan örnek “{0}” şu anda kullanılamıyor.</value>
+  </data>
+  <data name="Ui_Error_SaveDefault" xml:space="preserve">
+    <value>Varsayılan CLI örneği kaydedilemedi: {0}</value>
+  </data>
+  <data name="Ui_Error_ClearDefault" xml:space="preserve">
+    <value>Varsayılan CLI örneği temizlenemedi: {0}</value>
+  </data>
+  <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
+    <value>Proje klasörü uzantısı yüklendi.</value>
+  </data>
+  <data name="Ui_Status_DirectoryUninstalled" xml:space="preserve">
+    <value>Proje klasörü uzantısı kaldırıldı.</value>
+  </data>
+  <data name="Ui_Error_InstallDirectory" xml:space="preserve">
+    <value>Proje klasörü uzantısı yüklenemedi: {0}</value>
+  </data>
+  <data name="Ui_Error_UninstallDirectory" xml:space="preserve">
+    <value>Proje klasörü uzantısı kaldırılamadı: {0}</value>
+  </data>
+  <data name="Ui_Dialog_UninstallTitle" xml:space="preserve">
+    <value>VersionSelector kaldırılsın mı?</value>
+  </data>
+  <data name="Ui_Dialog_UninstallContent" xml:space="preserve">
+    <value>Bu işlem tüm Selector uzantılarını ve örnek yöneticisinin kendisini kaldırır; pjfc komutu da kullanılamaz hale gelir. Devam edilsin mi?</value>
+  </data>
+  <data name="Ui_Dialog_ConfirmUninstall" xml:space="preserve">
+    <value>Kaldır</value>
+  </data>
+  <data name="Ui_Dialog_Cancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="Ui_Status_Uninstalling" xml:space="preserve">
+    <value>Proje klasörü Selector uzantısı kaldırıldı. VersionSelector kaldırılıyor…</value>
+  </data>
+  <data name="Ui_Error_UninstallManager" xml:space="preserve">
+    <value>VersionSelector kaldırılamadı: {0}</value>
+  </data>
+  <data name="Ui_Error_Launch" xml:space="preserve">
+    <value>Seçili örnek başlatılamadı: {0}</value>
+  </data>
+  <data name="Ui_Directory_Installed" xml:space="preserve">
+    <value>Geçerli durum: yüklü</value>
+  </data>
+  <data name="Ui_Directory_NotInstalled" xml:space="preserve">
+    <value>Geçerli durum: yüklü değil</value>
+  </data>
+  <data name="App_SettingsMessage" xml:space="preserve">
+    <value>Proje klasörü uzantısını ve pjfc-nin varsayılan CLI örneğini burada yönetebilirsiniz.</value>
+  </data>
+  <data name="App_Error_DiscoverInstances" xml:space="preserve">
+    <value>Yüklü projectFrameCut örnekleri sorgulanamadı: {0}</value>
+  </data>
+  <data name="App_Error_LastLaunch" xml:space="preserve">
+    <value>Proje tarafından son kullanılan “{0}” örneği başlatılamadı: {1}
+Başka bir yüklü örnek seçin.</value>
+  </data>
+  <data name="App_Error_InstanceNotFound" xml:space="preserve">
+    <value>Proje tarafından son kullanılan örnek ({0}) bulunamadı. Yüklü bir örnek seçin.</value>
+  </data>
+  <data name="App_Error_MissingLastOpen" xml:space="preserve">
+    <value>Projede LastOpenAppIdentifier kaydı yok. Bu projeyi açmak için bir örnek seçin.</value>
+  </data>
+  <data name="App_Error_Startup" xml:space="preserve">
+    <value>Proje başlatma isteği işlenirken bir hata oluştu: {0}</value>
+  </data>
+  <data name="App_Error_ActivationNoPath" xml:space="preserve">
+    <value>Dosya etkinleştirme isteğinde kullanılabilir bir proje yolu bulunamadı.</value>
+  </data>
+  <data name="App_Error_ActivationMultiple" xml:space="preserve">
+    <value>Aynı anda yalnızca bir projectFrameCut projesi açılabilir.</value>
+  </data>
+  <data name="App_Error_ActivationRead" xml:space="preserve">
+    <value>Dosya etkinleştirme bağımsız değişkenleri okunamadı: {0}</value>
+  </data>
+  <data name="InstanceManagerTitle.Text" xml:space="preserve">
+    <value>VersionSelector-ı kaldır</value>
+  </data>
+</root>

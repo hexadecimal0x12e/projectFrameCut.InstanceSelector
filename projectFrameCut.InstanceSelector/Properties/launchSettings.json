@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "projectFrameCut.InstanceSelector (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "projectFrameCut.InstanceSelector (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
