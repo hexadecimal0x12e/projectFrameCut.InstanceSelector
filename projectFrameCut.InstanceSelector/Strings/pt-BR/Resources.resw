@@ -141,6 +141,18 @@
   <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
     <value>Limpar instância padrão</value>
   </data>
+  <data name="DiagnosticCaptureTitle.Text" xml:space="preserve">
+    <value>Captura de diagnóstico</value>
+  </data>
+  <data name="DiagnosticCaptureDescription.Text" xml:space="preserve">
+    <value>Inicia a instância selecionada no modo de diagnóstico e captura stdout, stderr e despejos completos de falha do WER. O arquivo é compartilhado após a saída.</value>
+  </data>
+  <data name="DiagnosticInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Selecione uma instância do projectFrameCut para diagnosticar</value>
+  </data>
+  <data name="StartDiagnosticCaptureButton.Content" xml:space="preserve">
+    <value>Iniciar e capturar logs</value>
+  </data>
   <data name="DirectoryClassTitle.Text" xml:space="preserve">
     <value>Extensão da pasta do projeto</value>
   </data>
@@ -197,6 +209,21 @@
   </data>
   <data name="Ui_Error_ClearDefault" xml:space="preserve">
     <value>Não foi possível limpar a instância CLI padrão: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_Running" xml:space="preserve">
+    <value>Configurando o WER e iniciando a instância de diagnóstico. Feche o projectFrameCut após reproduzir o problema…</value>
+  </data>
+  <data name="Ui_Diagnostic_Complete" xml:space="preserve">
+    <value>A instância de diagnóstico saiu com o código {0}. Foram capturados {1} despejos. Arquivo: {2}</value>
+  </data>
+  <data name="Ui_Diagnostic_Error" xml:space="preserve">
+    <value>Falha na captura de diagnóstico: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_NoArchive" xml:space="preserve">
+    <value>Não há arquivo de diagnóstico para compartilhar.</value>
+  </data>
+  <data name="Ui_Diagnostic_ShareTitle" xml:space="preserve">
+    <value>Logs de diagnóstico e despejos do projectFrameCut</value>
   </data>
   <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
     <value>A extensão da pasta do projeto foi instalada.</value>

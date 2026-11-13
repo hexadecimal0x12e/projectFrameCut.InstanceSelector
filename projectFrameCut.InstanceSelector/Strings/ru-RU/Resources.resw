@@ -141,6 +141,18 @@
   <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
     <value>Очистить экземпляр по умолчанию</value>
   </data>
+  <data name="DiagnosticCaptureTitle.Text" xml:space="preserve">
+    <value>Сбор диагностики</value>
+  </data>
+  <data name="DiagnosticCaptureDescription.Text" xml:space="preserve">
+    <value>Запускает выбранный экземпляр в режиме диагностики и сохраняет stdout, stderr и полные дампы сбоев WER. После выхода архив передается через меню общего доступа.</value>
+  </data>
+  <data name="DiagnosticInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Выберите экземпляр projectFrameCut для диагностики</value>
+  </data>
+  <data name="StartDiagnosticCaptureButton.Content" xml:space="preserve">
+    <value>Запустить и собирать журналы</value>
+  </data>
   <data name="DirectoryClassTitle.Text" xml:space="preserve">
     <value>Расширение папки проекта</value>
   </data>
@@ -197,6 +209,21 @@
   </data>
   <data name="Ui_Error_ClearDefault" xml:space="preserve">
     <value>Не удалось очистить экземпляр CLI по умолчанию: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_Running" xml:space="preserve">
+    <value>Настраивается WER и запускается диагностический экземпляр. Закройте projectFrameCut после воспроизведения проблемы…</value>
+  </data>
+  <data name="Ui_Diagnostic_Complete" xml:space="preserve">
+    <value>Диагностический экземпляр завершился с кодом {0}. Получено дампов: {1}. Архив: {2}</value>
+  </data>
+  <data name="Ui_Diagnostic_Error" xml:space="preserve">
+    <value>Не удалось собрать диагностику: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_NoArchive" xml:space="preserve">
+    <value>Нет диагностического архива для отправки.</value>
+  </data>
+  <data name="Ui_Diagnostic_ShareTitle" xml:space="preserve">
+    <value>Диагностические журналы и дампы projectFrameCut</value>
   </data>
   <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
     <value>Расширение папки проекта установлено.</value>

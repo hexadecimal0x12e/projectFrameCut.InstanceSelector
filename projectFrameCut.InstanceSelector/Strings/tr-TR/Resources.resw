@@ -141,6 +141,18 @@
   <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
     <value>Varsayılan örneği temizle</value>
   </data>
+  <data name="DiagnosticCaptureTitle.Text" xml:space="preserve">
+    <value>Tanı yakalama</value>
+  </data>
+  <data name="DiagnosticCaptureDescription.Text" xml:space="preserve">
+    <value>Seçili örneği tanı modunda başlatır; stdout, stderr ve tam WER kilitlenme dökümlerini yakalar. Örnek kapandıktan sonra arşiv paylaşılır.</value>
+  </data>
+  <data name="DiagnosticInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Tanılanacak projectFrameCut örneğini seçin</value>
+  </data>
+  <data name="StartDiagnosticCaptureButton.Content" xml:space="preserve">
+    <value>Başlat ve günlükleri yakala</value>
+  </data>
   <data name="DirectoryClassTitle.Text" xml:space="preserve">
     <value>Proje klasörü uzantısı</value>
   </data>
@@ -197,6 +209,21 @@
   </data>
   <data name="Ui_Error_ClearDefault" xml:space="preserve">
     <value>Varsayılan CLI örneği temizlenemedi: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_Running" xml:space="preserve">
+    <value>WER yapılandırılıyor ve tanı örneği başlatılıyor. Sorunu yeniden oluşturduktan sonra projectFrameCut uygulamasını kapatın…</value>
+  </data>
+  <data name="Ui_Diagnostic_Complete" xml:space="preserve">
+    <value>Tanı örneği {0} koduyla kapandı. {1} kilitlenme dökümü yakalandı. Arşiv: {2}</value>
+  </data>
+  <data name="Ui_Diagnostic_Error" xml:space="preserve">
+    <value>Tanı yakalama başarısız oldu: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_NoArchive" xml:space="preserve">
+    <value>Paylaşılacak tanı arşivi yok.</value>
+  </data>
+  <data name="Ui_Diagnostic_ShareTitle" xml:space="preserve">
+    <value>projectFrameCut tanı günlükleri ve kilitlenme dökümleri</value>
   </data>
   <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
     <value>Proje klasörü uzantısı yüklendi.</value>

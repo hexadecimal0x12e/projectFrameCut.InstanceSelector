@@ -141,6 +141,18 @@
   <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
     <value>Standardinstanz löschen</value>
   </data>
+  <data name="DiagnosticCaptureTitle.Text" xml:space="preserve">
+    <value>Diagnoseaufzeichnung</value>
+  </data>
+  <data name="DiagnosticCaptureDescription.Text" xml:space="preserve">
+    <value>Die ausgewählte Instanz im Diagnosemodus starten und stdout, stderr sowie vollständige WER-Absturzabbilder erfassen. Nach dem Beenden wird ein Archiv geteilt.</value>
+  </data>
+  <data name="DiagnosticInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Zu diagnostizierende projectFrameCut-Instanz auswählen</value>
+  </data>
+  <data name="StartDiagnosticCaptureButton.Content" xml:space="preserve">
+    <value>Starten und Protokolle erfassen</value>
+  </data>
   <data name="DirectoryClassTitle.Text" xml:space="preserve">
     <value>Projektordner-Erweiterung</value>
   </data>
@@ -197,6 +209,21 @@
   </data>
   <data name="Ui_Error_ClearDefault" xml:space="preserve">
     <value>Die Standard-CLI-Instanz konnte nicht gelöscht werden: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_Running" xml:space="preserve">
+    <value>WER wird konfiguriert und die Diagnoseinstanz gestartet. Schließen Sie projectFrameCut nach dem Reproduzieren des Problems…</value>
+  </data>
+  <data name="Ui_Diagnostic_Complete" xml:space="preserve">
+    <value>Die Diagnoseinstanz wurde mit Code {0} beendet. {1} Absturzabbild(er) erfasst. Archiv: {2}</value>
+  </data>
+  <data name="Ui_Diagnostic_Error" xml:space="preserve">
+    <value>Diagnoseaufzeichnung fehlgeschlagen: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_NoArchive" xml:space="preserve">
+    <value>Es ist kein Diagnosearchiv zum Teilen vorhanden.</value>
+  </data>
+  <data name="Ui_Diagnostic_ShareTitle" xml:space="preserve">
+    <value>projectFrameCut-Diagnoseprotokolle und Absturzabbilder</value>
   </data>
   <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
     <value>Die Projektordner-Erweiterung wurde installiert.</value>

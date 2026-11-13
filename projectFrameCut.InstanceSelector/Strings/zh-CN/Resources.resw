@@ -141,6 +141,18 @@
   <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
     <value>清除默认实例</value>
   </data>
+  <data name="DiagnosticCaptureTitle.Text" xml:space="preserve">
+    <value>日志捕获</value>
+  </data>
+  <data name="DiagnosticCaptureDescription.Text" xml:space="preserve">
+    <value>以诊断模式启动所选实例，捕获标准输出、错误输出和 WER 完整崩溃转储。实例退出后会生成压缩包并打开分享菜单。</value>
+  </data>
+  <data name="DiagnosticInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>选择要诊断的 projectFrameCut 实例</value>
+  </data>
+  <data name="StartDiagnosticCaptureButton.Content" xml:space="preserve">
+    <value>启动并捕获日志</value>
+  </data>
   <data name="DirectoryClassTitle.Text" xml:space="preserve">
     <value>项目文件夹扩展</value>
   </data>
@@ -197,6 +209,21 @@
   </data>
   <data name="Ui_Error_ClearDefault" xml:space="preserve">
     <value>无法清除默认 CLI 实例：{0}</value>
+  </data>
+  <data name="Ui_Diagnostic_Running" xml:space="preserve">
+    <value>正在配置 WER 并启动诊断实例。请在完成问题复现后关闭 projectFrameCut……</value>
+  </data>
+  <data name="Ui_Diagnostic_Complete" xml:space="preserve">
+    <value>诊断实例已退出（代码 {0}），已捕获 {1} 个崩溃转储。压缩包：{2}</value>
+  </data>
+  <data name="Ui_Diagnostic_Error" xml:space="preserve">
+    <value>诊断捕获失败：{0}</value>
+  </data>
+  <data name="Ui_Diagnostic_NoArchive" xml:space="preserve">
+    <value>没有可分享的诊断压缩包。</value>
+  </data>
+  <data name="Ui_Diagnostic_ShareTitle" xml:space="preserve">
+    <value>projectFrameCut 诊断日志与崩溃转储</value>
   </data>
   <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
     <value>项目文件夹扩展已安装。</value>

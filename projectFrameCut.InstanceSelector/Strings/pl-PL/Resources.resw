@@ -141,6 +141,18 @@
   <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
     <value>Wyczyść domyślne wystąpienie</value>
   </data>
+  <data name="DiagnosticCaptureTitle.Text" xml:space="preserve">
+    <value>Przechwytywanie diagnostyczne</value>
+  </data>
+  <data name="DiagnosticCaptureDescription.Text" xml:space="preserve">
+    <value>Uruchamia wybraną instancję w trybie diagnostycznym i przechwytuje stdout, stderr oraz pełne zrzuty awarii WER. Po zakończeniu udostępnia archiwum.</value>
+  </data>
+  <data name="DiagnosticInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Wybierz instancję projectFrameCut do diagnostyki</value>
+  </data>
+  <data name="StartDiagnosticCaptureButton.Content" xml:space="preserve">
+    <value>Uruchom i przechwytuj dzienniki</value>
+  </data>
   <data name="DirectoryClassTitle.Text" xml:space="preserve">
     <value>Rozszerzenie folderu projektu</value>
   </data>
@@ -197,6 +209,21 @@
   </data>
   <data name="Ui_Error_ClearDefault" xml:space="preserve">
     <value>Nie można wyczyścić domyślnego wystąpienia CLI: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_Running" xml:space="preserve">
+    <value>Konfigurowanie WER i uruchamianie instancji diagnostycznej. Po odtworzeniu problemu zamknij projectFrameCut…</value>
+  </data>
+  <data name="Ui_Diagnostic_Complete" xml:space="preserve">
+    <value>Instancja diagnostyczna zakończyła działanie z kodem {0}. Przechwycono {1} zrzutów. Archiwum: {2}</value>
+  </data>
+  <data name="Ui_Diagnostic_Error" xml:space="preserve">
+    <value>Przechwytywanie diagnostyczne nie powiodło się: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_NoArchive" xml:space="preserve">
+    <value>Brak archiwum diagnostycznego do udostępnienia.</value>
+  </data>
+  <data name="Ui_Diagnostic_ShareTitle" xml:space="preserve">
+    <value>Dzienniki diagnostyczne i zrzuty awarii projectFrameCut</value>
   </data>
   <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
     <value>Zainstalowano rozszerzenie folderu projektu.</value>

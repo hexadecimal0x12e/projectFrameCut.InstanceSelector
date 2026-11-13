@@ -2,6 +2,7 @@ using Microsoft.UI.Xaml;
 using Microsoft.Windows.AppLifecycle;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Activation;
@@ -57,6 +58,30 @@ namespace projectFrameCut.InstanceSelector
                     }
 
                     ShowWindow(settingsMessage, null, settingsInstances);
+                    return;
+                }
+
+                if (IsDirectOpenTarget(activation.ProjectPath))
+                {
+                    IReadOnlyList<ProjectFrameCutInstance> directOpenInstances;
+                    try
+                    {
+                        directOpenInstances = await _launchService.DiscoverInstancesAsync();
+                    }
+                    catch (Exception ex)
+                    {
+                        ShowWindow(
+                            UiStrings.Format("App_Error_DiscoverInstances", ex.Message),
+                            activation.ProjectPath,
+                            []);
+                        return;
+                    }
+
+                    ShowWindow(
+                        UiStrings.Get("Ui_Title_SelectInstance"),
+                        activation.ProjectPath,
+                        directOpenInstances,
+                        true);
                     return;
                 }
 
@@ -274,6 +299,13 @@ namespace projectFrameCut.InstanceSelector
         private static bool IsProjectFrameCutProtocol(string value) =>
             Uri.TryCreate(value, UriKind.Absolute, out Uri? uri) &&
             string.Equals(uri.Scheme, "pjfc", StringComparison.OrdinalIgnoreCase);
+
+        private static bool IsDirectOpenTarget(string path)
+        {
+            string extension = Path.GetExtension(path);
+            return string.Equals(extension, ".pjfcPlugin", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(extension, ".pjfcTemplate", StringComparison.OrdinalIgnoreCase);
+        }
 
         private static bool TryGetQueryParameter(
             string value,

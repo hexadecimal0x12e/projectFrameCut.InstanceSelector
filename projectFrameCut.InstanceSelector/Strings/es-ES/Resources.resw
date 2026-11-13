@@ -141,6 +141,18 @@
   <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
     <value>Borrar instancia predeterminada</value>
   </data>
+  <data name="DiagnosticCaptureTitle.Text" xml:space="preserve">
+    <value>Captura de diagnóstico</value>
+  </data>
+  <data name="DiagnosticCaptureDescription.Text" xml:space="preserve">
+    <value>Inicia la instancia seleccionada en modo de diagnóstico y captura stdout, stderr y volcados de bloqueo completos de WER. El archivo se comparte al salir.</value>
+  </data>
+  <data name="DiagnosticInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Seleccionar una instancia de projectFrameCut para diagnosticar</value>
+  </data>
+  <data name="StartDiagnosticCaptureButton.Content" xml:space="preserve">
+    <value>Iniciar y capturar registros</value>
+  </data>
   <data name="DirectoryClassTitle.Text" xml:space="preserve">
     <value>Extensión de carpeta del proyecto</value>
   </data>
@@ -197,6 +209,21 @@
   </data>
   <data name="Ui_Error_ClearDefault" xml:space="preserve">
     <value>No se pudo borrar la instancia de CLI predeterminada: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_Running" xml:space="preserve">
+    <value>Configurando WER e iniciando la instancia de diagnóstico. Cierra projectFrameCut tras reproducir el problema…</value>
+  </data>
+  <data name="Ui_Diagnostic_Complete" xml:space="preserve">
+    <value>La instancia de diagnóstico terminó con el código {0}. Se capturaron {1} volcados. Archivo: {2}</value>
+  </data>
+  <data name="Ui_Diagnostic_Error" xml:space="preserve">
+    <value>Error en la captura de diagnóstico: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_NoArchive" xml:space="preserve">
+    <value>No hay ningún archivo de diagnóstico para compartir.</value>
+  </data>
+  <data name="Ui_Diagnostic_ShareTitle" xml:space="preserve">
+    <value>Registros de diagnóstico y volcados de projectFrameCut</value>
   </data>
   <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
     <value>Se instaló la extensión de carpeta del proyecto.</value>

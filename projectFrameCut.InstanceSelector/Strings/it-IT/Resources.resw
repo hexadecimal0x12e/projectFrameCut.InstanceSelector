@@ -141,6 +141,18 @@
   <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
     <value>Cancella istanza predefinita</value>
   </data>
+  <data name="DiagnosticCaptureTitle.Text" xml:space="preserve">
+    <value>Acquisizione diagnostica</value>
+  </data>
+  <data name="DiagnosticCaptureDescription.Text" xml:space="preserve">
+    <value>Avvia l’istanza selezionata in modalità diagnostica e acquisisce stdout, stderr e dump completi WER. L’archivio viene condiviso dopo l’uscita.</value>
+  </data>
+  <data name="DiagnosticInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Seleziona un’istanza projectFrameCut da diagnosticare</value>
+  </data>
+  <data name="StartDiagnosticCaptureButton.Content" xml:space="preserve">
+    <value>Avvia e acquisisci i log</value>
+  </data>
   <data name="DirectoryClassTitle.Text" xml:space="preserve">
     <value>Estensione della cartella del progetto</value>
   </data>
@@ -197,6 +209,21 @@
   </data>
   <data name="Ui_Error_ClearDefault" xml:space="preserve">
     <value>Impossibile cancellare l-istanza CLI predefinita: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_Running" xml:space="preserve">
+    <value>Configurazione di WER e avvio dell’istanza diagnostica. Chiudi projectFrameCut dopo aver riprodotto il problema…</value>
+  </data>
+  <data name="Ui_Diagnostic_Complete" xml:space="preserve">
+    <value>L’istanza diagnostica è terminata con codice {0}. Acquisiti {1} dump. Archivio: {2}</value>
+  </data>
+  <data name="Ui_Diagnostic_Error" xml:space="preserve">
+    <value>Acquisizione diagnostica non riuscita: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_NoArchive" xml:space="preserve">
+    <value>Nessun archivio diagnostico da condividere.</value>
+  </data>
+  <data name="Ui_Diagnostic_ShareTitle" xml:space="preserve">
+    <value>Log diagnostici e dump di projectFrameCut</value>
   </data>
   <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
     <value>L-estensione della cartella del progetto è stata installata.</value>

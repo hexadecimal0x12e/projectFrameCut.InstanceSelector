@@ -3,8 +3,12 @@ using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Runtime.InteropServices;
+using WinRT;
 using Windows.ApplicationModel;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Management.Deployment;
+using Windows.Storage;
 
 namespace projectFrameCut.InstanceSelector
 {
@@ -15,6 +19,12 @@ namespace projectFrameCut.InstanceSelector
         private readonly IReadOnlyList<ProjectFrameCutInstance> _instances;
         private readonly string? _projectPath;
         private readonly string? _launchPayload;
+        private readonly IDataTransferManagerInterop _dataTransferManagerInterop;
+        private readonly DataTransferManager _dataTransferManager;
+        private StorageFile? _diagnosticArchive;
+
+        private static readonly Guid DataTransferManagerId =
+            new(0xa5caee9b, 0x8708, 0x49d1, 0x8d, 0x36, 0x67, 0xd2, 0x5a, 0x8d, 0xa0, 0x0c);
 
         internal MainWindow(
             ProjectLaunchService launchService,
@@ -42,12 +52,20 @@ namespace projectFrameCut.InstanceSelector
             _instances = instances;
             _projectPath = projectPath;
             _launchPayload = launchPayload;
+            _dataTransferManagerInterop = DataTransferManager.As<IDataTransferManagerInterop>();
+            Guid dataTransferManagerId = DataTransferManagerId;
+            nint dataTransferManager = _dataTransferManagerInterop.GetForWindow(
+                WinRT.Interop.WindowNative.GetWindowHandle(this),
+                ref dataTransferManagerId);
+            _dataTransferManager = WinRT.MarshalInterface<DataTransferManager>.FromAbi(dataTransferManager);
+            _dataTransferManager.DataRequested += DataTransferManager_DataRequested;
             StatusTextBlock.Text = message;
             ProjectPathTextBlock.Text = string.IsNullOrWhiteSpace(projectPath)
                 ? string.Empty
                 : UiStrings.Format("Ui_ProjectPath", projectPath);
             InstancesList.ItemsSource = instances;
             DefaultCliInstanceComboBox.ItemsSource = instances;
+            DiagnosticInstanceComboBox.ItemsSource = instances;
 
             bool hasInstances = allowInstanceSelection && instances.Count > 0;
             bool showSettingsActions =
@@ -76,7 +94,65 @@ namespace projectFrameCut.InstanceSelector
             {
                 UpdateDirectoryClassControls();
                 UpdateDefaultCliControls();
+                DiagnosticInstanceComboBox.SelectedItem =
+                    DefaultCliInstanceComboBox.SelectedItem ??
+                    (instances.Count > 0 ? instances[0] : null);
             }
+        }
+
+        private void DiagnosticInstanceComboBox_SelectionChanged(
+            object sender,
+            SelectionChangedEventArgs e)
+        {
+            StartDiagnosticCaptureButton.IsEnabled =
+                DiagnosticInstanceComboBox.SelectedItem is ProjectFrameCutInstance;
+        }
+
+        private async void StartDiagnosticCaptureButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (DiagnosticInstanceComboBox.SelectedItem is not ProjectFrameCutInstance instance)
+            {
+                return;
+            }
+
+            SetDiagnosticCaptureBusy(true);
+            try
+            {
+                DiagnosticCaptureStateTextBlock.Text = UiStrings.Get("Ui_Diagnostic_Running");
+                DiagnosticCaptureResult result = await DiagnosticCaptureService.CaptureAsync(instance);
+                _diagnosticArchive = await StorageFile.GetFileFromPathAsync(result.ArchivePath);
+                DiagnosticCaptureStateTextBlock.Text = UiStrings.Format(
+                    "Ui_Diagnostic_Complete",
+                    result.ExitCode,
+                    result.DumpCount,
+                    result.ArchivePath);
+                _dataTransferManagerInterop.ShowShareUIForWindow(
+                    WinRT.Interop.WindowNative.GetWindowHandle(this));
+            }
+            catch (Exception ex)
+            {
+                DiagnosticCaptureStateTextBlock.Text =
+                    UiStrings.Format("Ui_Diagnostic_Error", ex.Message);
+            }
+            finally
+            {
+                SetDiagnosticCaptureBusy(false);
+            }
+        }
+
+        private void DataTransferManager_DataRequested(
+            DataTransferManager sender,
+            DataRequestedEventArgs args)
+        {
+            StorageFile? archive = _diagnosticArchive;
+            if (archive is null)
+            {
+                args.Request.FailWithDisplayText(UiStrings.Get("Ui_Diagnostic_NoArchive"));
+                return;
+            }
+
+            args.Request.Data.Properties.Title = UiStrings.Get("Ui_Diagnostic_ShareTitle");
+            args.Request.Data.SetStorageItems([archive]);
         }
 
         private void DefaultCliInstanceComboBox_SelectionChanged(
@@ -306,6 +382,13 @@ namespace projectFrameCut.InstanceSelector
             UninstallInstanceManagerButton.IsEnabled = !isBusy;
         }
 
+        private void SetDiagnosticCaptureBusy(bool isBusy)
+        {
+            DiagnosticInstanceComboBox.IsEnabled = !isBusy && _instances.Count > 0;
+            StartDiagnosticCaptureButton.IsEnabled =
+                !isBusy && DiagnosticInstanceComboBox.SelectedItem is ProjectFrameCutInstance;
+        }
+
         private void UpdateDefaultCliControls()
         {
             DefaultCliInstanceComboBox.IsEnabled = _instances.Count > 0;
@@ -359,5 +442,14 @@ namespace projectFrameCut.InstanceSelector
                 : UiStrings.Get("Ui_Directory_NotInstalled");
             UninstallDirectoryClassButton.IsEnabled = isInstalled;
         }
+    }
+
+    [ComImport]
+    [Guid("3A3DCD6C-3EAB-43DC-BCDE-45671CE800C8")]
+    [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+    internal interface IDataTransferManagerInterop
+    {
+        nint GetForWindow([In] nint appWindow, [In] ref Guid riid);
+        void ShowShareUIForWindow(nint appWindow);
     }
 }

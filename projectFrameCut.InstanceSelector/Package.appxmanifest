@@ -51,7 +51,7 @@
 			<Extensions>
 				<uap:Extension Category="windows.fileTypeAssociation">
 					<uap:FileTypeAssociation Name="projectframecut_project">
-						<uap:DisplayName>projectFrameCut Project</uap:DisplayName>
+						<uap:DisplayName>projectFrameCut Project Manifest/Bundle</uap:DisplayName>
 						<uap:SupportedFileTypes>
 							<uap:FileType>.pjfc</uap:FileType>
 						</uap:SupportedFileTypes>
@@ -62,6 +62,14 @@
 						<uap:DisplayName>projectFrameCut Plugin</uap:DisplayName>
 						<uap:SupportedFileTypes>
 							<uap:FileType>.pjfcPlugin</uap:FileType>
+						</uap:SupportedFileTypes>
+					</uap:FileTypeAssociation>
+				</uap:Extension>
+				<uap:Extension Category="windows.fileTypeAssociation">
+					<uap:FileTypeAssociation Name="projectframecut_template">
+						<uap:DisplayName>projectFrameCut Template</uap:DisplayName>
+						<uap:SupportedFileTypes>
+							<uap:FileType>.pjfcTemplate</uap:FileType>
 						</uap:SupportedFileTypes>
 					</uap:FileTypeAssociation>
 				</uap:Extension>
@@ -95,6 +103,7 @@
 
 	<Capabilities>
 		<rescap:Capability Name="runFullTrust" />
+		<rescap:Capability Name="allowElevation" />
 		<rescap:Capability Name="packageQuery" />
 		<rescap:Capability Name="unvirtualizedResources" />
 		<Capability Name="internetClientServer"/>

@@ -227,6 +227,52 @@
                         CornerRadius="8">
                         <StackPanel Spacing="12">
                             <TextBlock
+                                x:Uid="DiagnosticCaptureTitle"
+                                FontSize="18"
+                                FontWeight="SemiBold" />
+                            <TextBlock
+                                x:Uid="DiagnosticCaptureDescription"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                TextWrapping="Wrap" />
+                            <ComboBox
+                                x:Name="DiagnosticInstanceComboBox"
+                                x:Uid="DiagnosticInstanceComboBox"
+                                HorizontalAlignment="Stretch"
+                                SelectionChanged="DiagnosticInstanceComboBox_SelectionChanged">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate x:DataType="local:ProjectFrameCutInstance">
+                                        <StackPanel>
+                                            <TextBlock Text="{x:Bind DisplayName}" />
+                                            <TextBlock
+                                                FontSize="12"
+                                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                                Text="{x:Bind Details}" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+                            </ComboBox>
+                            <TextBlock
+                                x:Name="DiagnosticCaptureStateTextBlock"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                TextWrapping="Wrap" />
+                            <Button
+                                x:Name="StartDiagnosticCaptureButton"
+                                x:Uid="StartDiagnosticCaptureButton"
+                                HorizontalAlignment="Stretch"
+                                Click="StartDiagnosticCaptureButton_Click"
+                                IsEnabled="False"
+                                Style="{StaticResource OpenWithButtonStyle}" />
+                        </StackPanel>
+                    </Border>
+
+                    <Border
+                        Padding="20"
+                        Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                        BorderThickness="1"
+                        CornerRadius="8">
+                        <StackPanel Spacing="12">
+                            <TextBlock
                                 x:Uid="DirectoryClassTitle"
                                 FontSize="18"
                                 FontWeight="SemiBold" />

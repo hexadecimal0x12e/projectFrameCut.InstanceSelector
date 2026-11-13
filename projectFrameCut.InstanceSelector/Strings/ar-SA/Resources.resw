@@ -141,6 +141,18 @@
   <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
     <value>مسح المثيل الافتراضي</value>
   </data>
+  <data name="DiagnosticCaptureTitle.Text" xml:space="preserve">
+    <value>التقاط التشخيص</value>
+  </data>
+  <data name="DiagnosticCaptureDescription.Text" xml:space="preserve">
+    <value>ابدأ المثيل المحدد في وضع التشخيص والتقط stdout وstderr ونسخ أعطال WER الكاملة. ستتم مشاركة أرشيف بعد خروج المثيل.</value>
+  </data>
+  <data name="DiagnosticInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>حدد مثيل projectFrameCut لتشخيصه</value>
+  </data>
+  <data name="StartDiagnosticCaptureButton.Content" xml:space="preserve">
+    <value>بدء التشغيل والتقاط السجلات</value>
+  </data>
   <data name="DirectoryClassTitle.Text" xml:space="preserve">
     <value>امتداد مجلد المشروع</value>
   </data>
@@ -197,6 +209,21 @@
   </data>
   <data name="Ui_Error_ClearDefault" xml:space="preserve">
     <value>تعذر مسح مثيل CLI الافتراضي: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_Running" xml:space="preserve">
+    <value>جارٍ إعداد WER وبدء مثيل التشخيص. أغلق projectFrameCut بعد إعادة إنتاج المشكلة…</value>
+  </data>
+  <data name="Ui_Diagnostic_Complete" xml:space="preserve">
+    <value>خرج مثيل التشخيص بالرمز {0}. تم التقاط {1} من نسخ الأعطال. الأرشيف: {2}</value>
+  </data>
+  <data name="Ui_Diagnostic_Error" xml:space="preserve">
+    <value>فشل الالتقاط التشخيصي: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_NoArchive" xml:space="preserve">
+    <value>لا يوجد أرشيف تشخيصي لمشاركته.</value>
+  </data>
+  <data name="Ui_Diagnostic_ShareTitle" xml:space="preserve">
+    <value>سجلات تشخيص projectFrameCut ونسخ الأعطال</value>
   </data>
   <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
     <value>تم تثبيت امتداد مجلد المشروع.</value>

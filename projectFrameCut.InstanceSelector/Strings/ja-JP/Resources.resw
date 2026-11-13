@@ -141,6 +141,18 @@
   <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
     <value>既定のインスタンスをクリア</value>
   </data>
+  <data name="DiagnosticCaptureTitle.Text" xml:space="preserve">
+    <value>診断キャプチャ</value>
+  </data>
+  <data name="DiagnosticCaptureDescription.Text" xml:space="preserve">
+    <value>選択したインスタンスを診断モードで起動し、stdout、stderr、WER の完全クラッシュダンプを収集します。終了後にアーカイブを共有します。</value>
+  </data>
+  <data name="DiagnosticInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>診断する projectFrameCut インスタンスを選択</value>
+  </data>
+  <data name="StartDiagnosticCaptureButton.Content" xml:space="preserve">
+    <value>起動してログを収集</value>
+  </data>
   <data name="DirectoryClassTitle.Text" xml:space="preserve">
     <value>プロジェクトフォルダー拡張機能</value>
   </data>
@@ -197,6 +209,21 @@
   </data>
   <data name="Ui_Error_ClearDefault" xml:space="preserve">
     <value>既定の CLI インスタンスをクリアできません：{0}</value>
+  </data>
+  <data name="Ui_Diagnostic_Running" xml:space="preserve">
+    <value>WER を構成して診断インスタンスを起動しています。問題を再現した後、projectFrameCut を閉じてください…</value>
+  </data>
+  <data name="Ui_Diagnostic_Complete" xml:space="preserve">
+    <value>診断インスタンスがコード {0} で終了しました。クラッシュダンプを {1} 件収集しました。アーカイブ: {2}</value>
+  </data>
+  <data name="Ui_Diagnostic_Error" xml:space="preserve">
+    <value>診断キャプチャに失敗しました: {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_NoArchive" xml:space="preserve">
+    <value>共有する診断アーカイブがありません。</value>
+  </data>
+  <data name="Ui_Diagnostic_ShareTitle" xml:space="preserve">
+    <value>projectFrameCut の診断ログとクラッシュダンプ</value>
   </data>
   <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
     <value>プロジェクトフォルダー拡張機能をインストールしました。</value>

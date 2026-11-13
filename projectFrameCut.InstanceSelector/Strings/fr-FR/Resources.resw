@@ -141,6 +141,18 @@
   <data name="ClearDefaultCliInstanceButton.Content" xml:space="preserve">
     <value>Effacer l-instance par défaut</value>
   </data>
+  <data name="DiagnosticCaptureTitle.Text" xml:space="preserve">
+    <value>Capture de diagnostic</value>
+  </data>
+  <data name="DiagnosticCaptureDescription.Text" xml:space="preserve">
+    <value>Démarre l’instance sélectionnée en mode diagnostic et capture stdout, stderr et les vidages complets WER. L’archive est partagée après la fermeture.</value>
+  </data>
+  <data name="DiagnosticInstanceComboBox.PlaceholderText" xml:space="preserve">
+    <value>Sélectionner une instance projectFrameCut à diagnostiquer</value>
+  </data>
+  <data name="StartDiagnosticCaptureButton.Content" xml:space="preserve">
+    <value>Démarrer et capturer les journaux</value>
+  </data>
   <data name="DirectoryClassTitle.Text" xml:space="preserve">
     <value>Extension de dossier de projet</value>
   </data>
@@ -197,6 +209,21 @@
   </data>
   <data name="Ui_Error_ClearDefault" xml:space="preserve">
     <value>Impossible d-effacer l-instance CLI par défaut : {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_Running" xml:space="preserve">
+    <value>Configuration de WER et démarrage de l’instance de diagnostic. Fermez projectFrameCut après avoir reproduit le problème…</value>
+  </data>
+  <data name="Ui_Diagnostic_Complete" xml:space="preserve">
+    <value>L’instance de diagnostic s’est arrêtée avec le code {0}. {1} vidage(s) capturé(s). Archive : {2}</value>
+  </data>
+  <data name="Ui_Diagnostic_Error" xml:space="preserve">
+    <value>Échec de la capture de diagnostic : {0}</value>
+  </data>
+  <data name="Ui_Diagnostic_NoArchive" xml:space="preserve">
+    <value>Aucune archive de diagnostic à partager.</value>
+  </data>
+  <data name="Ui_Diagnostic_ShareTitle" xml:space="preserve">
+    <value>Journaux de diagnostic et vidages de projectFrameCut</value>
   </data>
   <data name="Ui_Status_DirectoryInstalled" xml:space="preserve">
     <value>L-extension de dossier de projet a été installée.</value>
